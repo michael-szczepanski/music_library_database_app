@@ -1,0 +1,16 @@
+<html>
+  <head></head>
+  <body>
+    <h1>Albums</h1>
+    <% @albums.each do |album| %>
+      <a href="/albums/<%=album.id%>">
+        <div>
+          Title: <%= album.title %><br>
+          Released: <%= album.release_year %><br>
+        </div>
+      </a>
+      ----
+    <% end %>
+
+  </body>
+</html>
